@@ -1,0 +1,128 @@
+@import "./vars";
+
+.bg_header {
+    // background: linear-gradient(to bottom,  $secundario, $principal)
+    background: linear-gradient(to bottom, rgba(220, 211, 228, 0.95), rgba(107, 99, 114, 0.95)), url('/public/img/bg_header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 90px 0;
+    position: relative;
+
+    @media screen and (max-width: $desktop_1000) {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+.header_text {
+    display: grid;
+    gap: 20px;
+}
+
+.header_text_subtitle {
+    color: $gris_oscuro;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+.header_text_title {
+    color: white;
+    font-size: 45px;
+
+    @media screen and (max-width: $desktop_1200) {
+        font-size: 30px;
+    }
+}
+
+.header_text_subtitle_bottom {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.header_img {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+
+    img {
+        max-height: 600px;
+        max-width: 500px;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        z-index: 2;
+
+        @media screen and (max-width: $desktop_1000) {
+            display: none;
+        }
+    }
+}
+
+.header_btn {
+    display: flex;
+    gap: 25px;
+    padding-top: 15px;
+    z-index: 2;
+
+    @media screen and (max-width: $desktop_1000) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: $mobile_500) {
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    a {
+        border-radius: 7px;
+        padding: 20px;
+        background: $gris_oscuro;
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        animation: movimiento 1s linear infinite;
+        background: $secundario;
+        color: $principal;
+    }
+    
+    @keyframes movimiento {
+        0% {
+            transform: translateY(0);
+        }
+    
+        50% {
+            transform: translateY(10%);
+        }
+    
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
+
+.cut {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 20vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    overflow: hidden;
+}
