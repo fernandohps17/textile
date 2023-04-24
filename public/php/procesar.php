@@ -7,15 +7,15 @@
 
         if($nickname == "admin" && $password == "admin") {
             // echo "Accedio";
-            header("location:/comons/documento.php");
+            header("location:/documento/");
         }else{
             $error = "invalidos";
-            header("location:/comons/login.php?error=$error");
+            header("location:/login/index.php?error=$error");
         };
 
     }else{
         $error = "vacio";
-        header("location:/comons/login.php?error=$error");
+        header("location:/login/index.php?error=$error");
     }
 
 ?>
