@@ -1,3 +1,7 @@
+<?php
+session_start();
+require_once "./comons/version_css_js.php";
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#DCD3E4">
+    <meta name="theme-color" content="#9c1323">
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriend" content="true">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -18,14 +22,14 @@
     <link rel="apple-touch-startup-image" href="/public/icon/favicon.ico">
     <link rel="icon" href="/public/icon/favicon.ico">
 
-    <title>Textile</title>
+    <title>Maceió textile</title>
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
             "@type": "LocalBusiness",
-            "name": "Textile",
+            "name": "Maceió textile",
             "image": "https://www.textile.com/public/img/home_textile_logo.webp",
-            "telephone": ["58 412 555 51 18"],
+            "telephone": ["55 4631 2410"],
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Distrito Capital, Caracas - 1010, Venezuela"
@@ -45,11 +49,9 @@
     ?>
 
     <!-- SECTION ICON -->
-    <div class="container">
+    <!-- <div class="container">
         <div class="content">
             <div class="icon_header">
-
-                <!-- ICON 1 -->
                 <div class="icon_header_article">
                     <div class="icon_header_image">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960">
@@ -64,7 +66,6 @@
                     </div>
                 </div>
 
-                <!-- SICON 2 -->
                 <div class="icon_header_article">
                     <div class="icon_header_image">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960">
@@ -79,7 +80,6 @@
                     </div>
                 </div>
 
-                <!-- ICON 3 -->
                 <div class="icon_header_article">
                     <div class="icon_header_image">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960">
@@ -95,11 +95,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- SECTION ABOUT -->
-    <div class="container">
+    <!-- <div class="container">
         <div class="content">
             <div class="about" id="about">
                 <div class="about_content">
@@ -216,11 +216,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- SECTION SERVICES -->
-    <div class="container bg_services">
+    <!-- <div class="container bg_services">
         <div class="cut_services"></div>
         <div class="content">
             <div class="services" id="services">
@@ -317,10 +317,10 @@
             </div>
         </div>
         <div class="cut_services_bottom"></div>
-    </div>
+    </div> -->
 
     <!-- SECCION FROM -->
-    <div class="container">
+    <!-- <div class="container">
         <div class="content">
             <div class="section_form" id="contact">
 
@@ -365,7 +365,6 @@
                                 </div>
 
                                 <label class="section_form_inputs_encabezado">
-                                    <!-- <input type="text" name="mensaje" required placeholder="Mensaje"> -->
                                     <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
                                 </label>
 
@@ -383,17 +382,19 @@
             </div>
         </div>
         <div class="cut_footer"></div>
-    </div>
+    </div> -->
 
     <?php
-    require_once "./comons/btn_top.php";
+    // require_once "./comons/btn_top.php";
     require_once "./comons/footer.php";
     ?>
 
 </body>
 
-<script src="/public/js/menu.js"></script>
+<!-- <script src="/public/js/menu.js"></script> -->
 <script src="/public/js/carga_diferida.js"></script>
+<script src="/public/js/slides.js"></script>
+<script src="/public/js/menu.js"></script>
 
 
 </html>

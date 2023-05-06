@@ -4,8 +4,8 @@
             <div class="nav">
                 <div class="nav_logo" id="home">
                     <picture>
-                        <source type='image/webp' srcset="/public/img/home-textile-logo.webp">
-                        <img class="imageSlider" src="/public/img/home-textile-logo.png" alt="Textile Logo" title="Textile Logo" width="100" height="100">
+                        <source type='image/webp' srcset="/public/img/home-textile-logo-sin-fondo.webp">
+                        <img class="imageSlider" src="/public/img/home-textile-logo-sin-fondo.png" alt="Textile Logo" title="Textile Logo" width="100" height="100">
                     </picture>
                 </div>
                 <div class="toggle">
@@ -16,10 +16,13 @@
 
                 <nav class="nav_enlaces" id="menuMobile">
                     <p class="closeMenu" id="closeMenu">X</p>
-                    <a href="#home">Inicio</a>
-                    <a href="#about">Nosotros</a>
-                    <a href="#services">Servicios</a>
-                    <a href="#contact">Contacto</a>
+                    <a href="/">Inicio</a>
+                    <a href="/nosotros/">Nosotros</a>
+                    <a href="/contacto/">Contacto</a>
+
+                    <div class="nav_btn">
+                        <a href="/documento/documentos/catalogo.pdf" download="catalogo.pdf">Descargar <br> Catalogo</a>
+                    </div>
                 </nav>
             </div>
         </div>

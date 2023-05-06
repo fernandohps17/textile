@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Montserrat";
+    font-display: swap;
+    src: url(../font/Montserrat-Regular.ttf);
+}
+
 body {
-    font-family: 'Noto Sans', sans-serif;
-    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    // overflow-y: hidden;
 }
 
 html {

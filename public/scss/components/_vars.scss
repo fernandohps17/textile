@@ -4,6 +4,7 @@ $desktop_1400: 1400px;
 $desktop_1300: 1300px;
 $desktop_1200: 1200px;
 $desktop_1100: 1100px;
+$desktop_1020: 1020px;
 $desktop_1000: 1000px;
 
 
@@ -14,11 +15,18 @@ $tablet_800: 800px;
 $tablet_700: 700px;
 
 // MEDIDAS DE MOBILE
+$mobile_640: 640px;
 $mobile_500: 500px;
+$mobile_460: 460px;
 $mobile_400: 400px;
 
 
 // PALETA DE COLORES
-$principal: #6B6372;
-$secundario: #DCD3E4;
+// $principal: #6B6372;
+// $secundario: #DCD3E4;
 $gris_oscuro: #4c4454;
+
+$principal: #9c1323;
+$principal-claro: #bb4144;
+
+$secundario: #d36b5c;

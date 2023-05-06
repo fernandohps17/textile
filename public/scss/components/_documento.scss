@@ -11,7 +11,7 @@
 }
 
 .login_title{
-    color: $gris_oscuro;
+    color: $principal;
     font-size: 25px;
 }
 
@@ -27,7 +27,7 @@
     flex-direction: column;
     text-align: center;
     font-size: 20px;
-    color: $gris_oscuro;
+    color: $principal;
     gap: 10px;
 }
 
@@ -52,7 +52,7 @@ input[type="submit"] {
     border-radius: 10px;
     outline: none;
     border: 1px solid $principal;
-    background: $gris_oscuro;
+    background: $principal;
     color: white;
     font-size: 18px;
     padding: 10px 20px;
@@ -60,7 +60,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background: $secundario;
-    color: $gris_oscuro;
+    color: $principal;
     border: 1px solid $secundario;
     cursor: pointer;
 }
@@ -89,7 +89,7 @@ input[type="file"] {
     gap: 20px;
     font-size: 30px;
     letter-spacing: 1px;
-    color: $gris_oscuro;
+    color: $principal;
 }
 
 .exito {

@@ -1,190 +1,190 @@
 @import "./vars";
 
 .bg_footer{
-    background: $gris_oscuro;
-}
-
-.footer_top{
-    display: grid;
-    grid-template-columns: 1fr 0.7fr 1fr;
-    gap: 50px;
-    margin: 70px 0;
-
-    @media screen and (max-width: $tablet_800) {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-}
-
-// SECTION CONTENT
-
-.footer_content {
-    display: grid;
-    gap: 20px;
-}
-
-.footer_content_logo {
-    
-    img{
-        max-width: 200px;
-        max-height: 200px;
-        height: 100%;
-        width: 100%;
-    }
-}
-
-.footer_content_subtitle {
-    color: white;
-    letter-spacing: 1px;
-    line-height: 25px;
-}
-
-.footer_content_social {
-    display: flex;
-    gap: 10px;
-
-    @media screen and (max-width: $tablet_800) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-.footer_content_social_icon {
-    display: flex;
-    gap: 10px;
-
-    svg{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
-        fill: $secundario;
-        width: 30px;
-        // background: $secundario;
-        border-radius: 10px;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-.footer_content_social_icon:hover {
-    
-    svg{
-        cursor: pointer;
-        // background: $principal;
-        fill: $principal;
-    }
-}
-
-// SECTION NAVEGATION
-.footer_nav {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-}
-
-.footer_nav_text {
-    color: white;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.footer_nav_enlaces {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    a{
-        color: white;
-        // font-size: 18px;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: $principal;
-    }
-}
-
-// SECTION HOURS
-
-.footer_hour {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.footer_hour_text {
-    color: white;
-    font-size: 22px;
-}
-
-.footer_hour_number {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    color: white;
-
-    svg{
-        width: 20px;
-        fill: white;
-    }
-
-    @media screen and (max-width: $tablet_800) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-.footer_hour_subtitle {
-    color: white;
-}
-
-// FOOTER BTN
-
-.footer_btn {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    background: $secundario;
-    width: 120px;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px;
-    
-    a{
-        text-decoration: none;
-        color: $gris_oscuro;
-    }
-
-    svg{
-        width: 20px;
-        fill: $gris_oscuro;
-    }
-
-    @media screen and (max-width: $tablet_800) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
-}
-
-.footer_btn:hover {
     background: $principal;
-    cursor: pointer;
-
-    a{
-        color: $secundario;
-    }
-
-    svg{
-        fill: $secundario;
-    }
 }
+
+// .footer_top{
+//     display: grid;
+//     grid-template-columns: 1fr 0.7fr 1fr;
+//     gap: 50px;
+//     margin: 70px 0;
+
+//     @media screen and (max-width: $tablet_800) {
+//         grid-template-columns: 1fr;
+//         text-align: center;
+//     }
+// }
+
+// // SECTION CONTENT
+
+// .footer_content {
+//     display: grid;
+//     gap: 20px;
+// }
+
+// .footer_content_logo {
+    
+//     img{
+//         max-width: 200px;
+//         max-height: 200px;
+//         height: 100%;
+//         width: 100%;
+//     }
+// }
+
+// .footer_content_subtitle {
+//     color: white;
+//     letter-spacing: 1px;
+//     line-height: 25px;
+// }
+
+// .footer_content_social {
+//     display: flex;
+//     gap: 10px;
+
+//     @media screen and (max-width: $tablet_800) {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+// }
+
+// .footer_content_social_icon {
+//     display: flex;
+//     gap: 10px;
+
+//     svg{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         padding: 5px;
+//         fill: $secundario;
+//         width: 30px;
+//         // background: $secundario;
+//         border-radius: 10px;
+//         justify-content: center;
+//         align-items: center;
+//     }
+// }
+
+// .footer_content_social_icon:hover {
+    
+//     svg{
+//         cursor: pointer;
+//         // background: $principal;
+//         fill: $principal;
+//     }
+// }
+
+// // SECTION NAVEGATION
+// .footer_nav {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+
+// }
+
+// .footer_nav_text {
+//     color: white;
+//     font-weight: 600;
+//     font-size: 20px;
+// }
+
+// .footer_nav_enlaces {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+
+//     a{
+//         color: white;
+//         // font-size: 18px;
+//         text-decoration: none;
+//     }
+
+//     a:hover {
+//         color: $secundario;
+//     }
+// }
+
+// // SECTION HOURS
+
+// .footer_hour {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+// }
+
+// .footer_hour_text {
+//     color: white;
+//     font-size: 22px;
+// }
+
+// .footer_hour_number {
+//     display: flex;
+//     gap: 10px;
+//     align-items: center;
+//     color: white;
+
+//     svg{
+//         width: 20px;
+//         fill: white;
+//     }
+
+//     @media screen and (max-width: $tablet_800) {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+// }
+
+// .footer_hour_subtitle {
+//     color: white;
+// }
+
+// // FOOTER BTN
+
+// .footer_btn {
+//     display: flex;
+//     gap: 10px;
+//     align-items: center;
+//     background: $secundario;
+//     width: 120px;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 10px;
+//     border-radius: 10px;
+    
+//     a{
+//         text-decoration: none;
+//         color: $gris_oscuro;
+//     }
+
+//     svg{
+//         width: 20px;
+//         fill: $gris_oscuro;
+//     }
+
+//     @media screen and (max-width: $tablet_800) {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         margin: auto;
+//     }
+// }
+
+// .footer_btn:hover {
+//     background: $principal;
+//     cursor: pointer;
+
+//     a{
+//         color: $secundario;
+//     }
+
+//     svg{
+//         fill: $secundario;
+//     }
+// }
 
 // FOOTER BOTTOM
 .footer_bottom {
@@ -193,11 +193,11 @@
     text-align: center;
 
     a{
-        color: $secundario;
+        color: white;
     }
 
     a:hover{
-        color: $principal;
+        color: $secundario;
     }
 }
 

@@ -2,7 +2,7 @@
 
 
 .bg_bar_top{
-    background:  #4c4454;
+    background:  $principal;
 }
 
 .bar_top{
@@ -22,10 +22,10 @@
     display: flex;
     gap: 20px;
     padding: 10px 0;
-    color:  #dcd4e4 ;
+    color: white;
     
     svg{
-        fill:   #dcd4e4;
+        fill: white;
         width: 20px;
     }
 }
@@ -39,10 +39,12 @@
 }
 
 .hover:hover{
-    color: $secundario;
     cursor: pointer;
     svg{
         fill: $secundario;
+    }
+    a{
+        color: $secundario;
     }
 }
 
@@ -54,22 +56,29 @@
 
 .bar_top_contact{
     display: flex;
+    flex-direction: row;
     gap: 20px;
     padding: 10px 0;
-    color:  #dcd4e4 ;
+    color:  white ;
 
     svg{
-        fill:   #dcd4e4 ;
+        fill:  white ;
         width: 20px;
     }
 
-    @media screen and (max-width: $mobile_400) {
+    @media screen and (max-width: $mobile_460) {
         display: none;
     }
 }
 
 
 .bar_top_contact_icon{
-    display: flex;
-    gap: 5px;
+
+    a{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        color: white;
+        text-decoration: none;
+    }
 }

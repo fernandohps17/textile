@@ -1,0 +1,44 @@
+@import "./components/vars";
+
+.banner {
+    position: relative;
+    height: calc(100vh - 207px);
+
+    @media screen and (max-width: 1300px) {
+        height: auto;
+    }
+}
+
+b{
+    color: $principal;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    margin: 70px 0;
+
+    @media screen and (max-height: 700px) {
+        margin-top: 50px;
+        gap: 20px;
+    }
+}
+
+.about_title {
+    color: $principal;
+    font-size: 20px;
+
+    @media screen and (max-height: 700px) {
+        font-size: 16px;
+    }
+}
+
+.about_subtitle {
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin: auto;
+}

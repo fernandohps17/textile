@@ -4,7 +4,7 @@
 .section_form {
     display: grid;
     gap: 50px;
-    margin: 70px 0;
+    margin: 50px 0;
 }
 
 .section_form_form {
@@ -13,7 +13,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 70px;
 
     @media screen and (max-width: $tablet_700) {
         text-align: center;
@@ -23,6 +22,14 @@
 .section_form_form_text_title {
     font-size: 27px;
     color: $principal;
+
+    @media screen and (max-width: 600px) {
+        font-size: 19px;
+    }
+
+    @media screen and (max-height: 700px) {
+        font-size: 18px;
+    }
 }
 
 .section_form_form_subtitle {
@@ -38,7 +45,7 @@
         border: 1px solid rgba(0, 0, 0, 0.15);
         display: grid;
         grid-auto-flow: row;
-        padding: 5px 0;
+        padding: 1px 0;
     }
 }
 
@@ -61,7 +68,7 @@
     button {
         padding: 15px;
         color: white;
-        background: $gris_oscuro;
+        background: $principal;
         border: none;
         border-radius: 10px;
         font-size: 17px;
@@ -71,7 +78,7 @@
         
         &:hover {
             background: $secundario;
-            color: $gris_oscuro;
+            color: white;
         }
     }
 }
@@ -199,19 +206,5 @@
 
     #color {
         color: gray;
-    }
-}
-
-@keyframes movimiento {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(10%);
-    }
-
-    100% {
-        transform: translateY(0);
     }
 }
