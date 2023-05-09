@@ -5,9 +5,9 @@
 
     const imagenes = [
         {
-            image: "/public/img/home-textile-portada-slides1.jpg",
-            webp: "/public/img/home-textile-portada-slides1.webp",
-            mobile: "/public/img/home-textile-portada-slides1-mobile.webp",
+            image: "/public/img/home-textile-portada-slides2.jpg",
+            webp: "/public/img/home-textile-portada-slides2.webp",
+            mobile: "/public/img/home-textile-portada-slides2-mobile.webp",
         },
         {
             image: "/public/img/bg_services.jpg",

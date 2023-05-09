@@ -14,11 +14,11 @@ require_once "../comons/version_css_js.php";
     <meta name="HandheldFriend" content="true">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="description" content="En Textile realizamos creamos y diseños con las mejores telas.">
+    <meta name="description" content="En Textile realizamos creamos y diseñamos con las mejores telas.">
 
     <link rel="stylesheet" href="/public/css/home.css">
     <link rel="stylesheet" href="/public/css/about.css">
-    <link rel="canonical" href="https://www.textile.com/">
+    <link rel="canonical" href="https://www.textile.com/contacto">
     <link rel="apple-touch-icon" href="/public/icon/favicon.ico">
     <link rel="apple-touch-startup-image" href="/public/icon/favicon.ico">
     <link rel="icon" href="/public/icon/favicon.ico">
@@ -35,7 +35,7 @@ require_once "../comons/version_css_js.php";
                 "@type": "PostalAddress",
                 "addressLocality": "Distrito Capital, Caracas - 1010, Venezuela"
             },
-            "url": "https://www.textile.com/"
+            "url": "https://www.textile.com/contacto"
         }
     </script>
 </head>
@@ -48,66 +48,61 @@ require_once "../comons/version_css_js.php";
         ?>
 
         <!-- Section Contacto -->
-        <div class="banner">
+        <div class="banner1">
             <div class="container">
                 <div class="content">
                     <!-- SECCION FROM -->
-                    <div class="container">
-                        <div class="content">
-                            <div class="section_form" id="contact">
+                    <div class="section_form" id="contact">
 
-                                <div class="section_form_form">
-                                    <div class="section_form_form_text">
-                                        <div class="section_form_form_subtitle show_contacto">
-                                            <p><b>Contacto</b></p>
-                                        </div>
-                                    </div>
-
-                                    <section class="section_form_form_text_title">
-                                        <header>
-                                            <h2>¿Quieres un contacto <br> más directo con nuestro equipo?</h2>
-                                        </header>
-                                    </section>
-
-                                    <div class="section_formulario">
-
-                                        <div class="form_form">
-                                            <form class="section_form_inputs" action="/contact/" method="POST">
-                                                <div class="section_from_uno">
-                                                    <label class="section_form_inputs_encabezado">
-                                                        <input type="text" name="name" required placeholder="Nombre">
-                                                    </label>
-
-                                                    <label class="section_form_inputs_encabezado">
-                                                        <input type="text" name="email" required placeholder="Email">
-                                                    </label>
-                                                </div>
-                                    
-                                                <label class="section_form_inputs_encabezado">
-                                                    <textarea name="mensaje" cols="3" rows="5" placeholder="Mensaje" required></textarea>
-                                                </label>
-
-                                                <div class="section_form_inputs_botones">
-                                                    <div class="section_form_boton">
-                                                        <input type="hidden" class="g-recaptcha-response" name="g-recaptcha-response">
-                                                        <button type="submit">Envia tu mensaje</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
+                        <div class="section_form_form">
+                            <div class="section_form_form_text">
+                                <div class="section_form_form_subtitle show_contacto">
+                                    <p><b>Contacto</b></p>
                                 </div>
                             </div>
-                            </div>
-                            </div>
+
+                            <section class="section_form_form_text_title">
+                                <header>
+                                    <h2>¿Quieres un contacto <br> más directo con nuestro equipo?</h2>
+                                </header>
+                            </section>
+
+                            <div class="section_formulario">
+                                <div class="form_form">
+                                    <form class="section_form_inputs" action="/contact/" method="POST">
+                                        <div class="section_from_uno">
+                                            <label class="section_form_inputs_encabezado">
+                                                <input type="text" name="name" required placeholder="Nombre">
+                                            </label>
+
+                                            <label class="section_form_inputs_encabezado">
+                                                <input type="text" name="email" required placeholder="Email">
+                                            </label>
+                                        </div>
+
+                                        <label class="section_form_inputs_encabezado">
+                                            <textarea name="mensaje" cols="3" rows="5" placeholder="Mensaje" required></textarea>
+                                        </label>
+
+                                        <div class="section_form_inputs_botones">
+                                            <div class="section_form_boton">
+                                                <input type="hidden" class="g-recaptcha-response" name="g-recaptcha-response">
+                                                <button type="submit">Envia tu mensaje</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
 
 
-                    <?php
-                    require_once "../comons/footer.php";
-                    ?>
+        <?php
+        require_once "../comons/footer.php";
+        ?>
     </main>
 </body>
 <script src="/public/js/menu.js"></script>

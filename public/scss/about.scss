@@ -1,25 +1,29 @@
 @import "./components/vars";
 
-.banner {
+.banner1 {
     position: relative;
-    height: calc(100vh - 207px);
+    height: calc(100vh);
 
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 900px) {
         height: auto;
     }
 }
 
-b{
+span{
     color: $principal;
+
+    @media screen and (max-width: 600px) {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .about {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 40px;
+    gap: 50px;
     margin: 70px 0;
 
     @media screen and (max-height: 700px) {
@@ -28,17 +32,30 @@ b{
     }
 }
 
+.about_texto {
+    display: grid;
+    gap: 15px;
+}
+
 .about_title {
     color: $principal;
-    font-size: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
 
-    @media screen and (max-height: 700px) {
+    @media screen and (max-width: 600px) {
         font-size: 16px;
+        text-align: center;
     }
 }
 
 .about_subtitle {
+    display: grid;
+    gap: 20px;
+    font-size: 20px;
     letter-spacing: 1px;
-    line-height: 25px;
-    margin: auto;
+    line-height: 29px;
+
+    @media screen and (max-width: 600px) {
+        font-size: 16px;
+    }
 }

@@ -18,7 +18,7 @@ require_once "../comons/version_css_js.php";
 
     <link rel="stylesheet" href="/public/css/home.css">
     <link rel="stylesheet" href="/public/css/about.css">
-    <link rel="canonical" href="https://www.textile.com/">
+    <link rel="canonical" href="https://www.textile.com/nosotros/">
     <link rel="apple-touch-icon" href="/public/icon/favicon.ico">
     <link rel="apple-touch-startup-image" href="/public/icon/favicon.ico">
     <link rel="icon" href="/public/icon/favicon.ico">
@@ -35,7 +35,7 @@ require_once "../comons/version_css_js.php";
                 "@type": "PostalAddress",
                 "addressLocality": "Distrito Capital, Caracas - 1010, Venezuela"
             },
-            "url": "https://www.textile.com/"
+            "url": "https://www.textile.com/nosotros"
         }
     </script>
 </head>
@@ -48,14 +48,13 @@ require_once "../comons/version_css_js.php";
         ?>
 
         <!-- Section About -->
-        <div class="banner">
+        <div class="banner1">
             <div class="container">
                 <div class="content">
                     <div class="about">
                         <div class="about_subtitle">
-                            <p><b>NOSOTROS</b></p>
+                            <p><span>NOSOTROS</span></p>
                         </div>
-
 
                         <!-- Primera Section de texto -->
                         <div class="about_texto">
@@ -66,7 +65,7 @@ require_once "../comons/version_css_js.php";
                             </section>
                             <div class="about_subtitle">
                                 <p>El principal perfil de nuestra empresa es la venta de telas en tapicería de calidad y alta decoración.</p>
-                                <p>El diseño moderno, las texturas variadas y una amplia gama de colores hacen a nuestra <br> colección muy atractiva, siguiendo las tendencias actuales estamos constantemente enriqueciendo nuestras nuevas colecciones.</p>
+                                <p>El diseño moderno, las texturas variadas y una amplia gama de colores hacen a nuestra colección muy atractiva, <br> siguiendo las tendencias actuales estamos constantemente enriqueciendo nuestras nuevas colecciones.</p>
                             </div>
                         </div>
 
@@ -99,12 +98,10 @@ require_once "../comons/version_css_js.php";
             </div>
         </div>
 
-
         <?php
         require_once "../comons/footer.php";
         ?>
     </main>
 </body>
 <script src="/public/js/menu.js"></script>
-
 </html>

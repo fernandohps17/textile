@@ -2,17 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @font-face {
     font-family: "Montserrat";
     font-display: swap;
     src: url(../font/Montserrat-Regular.ttf);
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    // overflow-y: hidden;
 }
 
 html {

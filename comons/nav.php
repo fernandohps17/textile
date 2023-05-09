@@ -3,10 +3,12 @@
         <div class="content">
             <div class="nav">
                 <div class="nav_logo" id="home">
-                    <picture>
-                        <source type='image/webp' srcset="/public/img/home-textile-logo-sin-fondo.webp">
-                        <img class="imageSlider" src="/public/img/home-textile-logo-sin-fondo.png" alt="Textile Logo" title="Textile Logo" width="100" height="100">
-                    </picture>
+                    <a href="/">
+                        <picture>
+                            <source type='image/webp' srcset="/public/img/home-textile-logo-sin-fondo.webp">
+                            <img class="imageSlider" src="/public/img/home-textile-logo-sin-fondo.png" alt="Textile Logo" title="Textile Logo" width="100" height="100">
+                        </picture>
+                    </a>
                 </div>
                 <div class="toggle">
                     <svg xmlns="http://www.w3.org/2000/svg" id="openMenu" height="48" width="48">
