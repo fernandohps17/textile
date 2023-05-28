@@ -1,216 +1,347 @@
-@import "./vars";
+@import './vars';
 
 // Section del Form
 .section_form {
-    display: grid;
-    gap: 50px;
-    margin: 100px 0 0 0;
+  display: grid;
+  gap: 30px;
+  margin: 100px 0 0 0;
 
-    @media screen and (max-width: 900px) {
-        margin: 100px 0;
-    }
+  @media screen and (max-width: 900px) {
+    margin: 100px 0;
+  }
+}
+
+.other_inputs_information_check,
+.other_inputs {
+  input {
+    width: 100%;
+  }
 }
 
 .section_form_form {
-    display: grid;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: grid;
+  gap: 20px;
+  justify-content: center;
 
-    @media screen and (max-width: $tablet_700) {
-        text-align: center;
+  .section_formulario {
+    .form_form {
+      margin-top: 50px;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
     }
+  }
+
+  @media screen and (max-width: $tablet_700) {
+    text-align: center;
+  }
+}
+
+.form_form_header {
+  text-align: center;
 }
 
 .section_form_form_text_title {
-    font-size: 27px;
-    color: $principal;
+  text-align: center;
+  font-size: 27px;
+  color: $principal;
 
-    @media screen and (max-width: 600px) {
-        font-size: 19px;
-    }
+  @media screen and (max-width: 600px) {
+    font-size: 19px;
+  }
 
-    @media screen and (max-height: 700px) {
-        font-size: 18px;
-    }
+  @media screen and (max-height: 700px) {
+    font-size: 18px;
+  }
 }
 
 .section_form_form_subtitle {
-    line-height: 25px;
-    letter-spacing: 1px;
-    color: $principal;
+  text-align: center;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: $principal;
 }
 
 .section_form_inputs {
-    padding: 20px;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 50px;
 
-    label {
-        border: 1px solid rgba(0, 0, 0, 0.15);
-        display: grid;
-        grid-auto-flow: row;
-        padding: 1px 0;
+  .section_form_line {
+    display: none;
+  }
+
+  .section_form_addressee {
+    .section_form_inputs_addressee {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
     }
+  }
+
+  @media screen and (min-width: 1400px) {
+    flex-direction: initial;
+
+    .section_form_line {
+      display: flex;
+      width: 3px;
+      border-radius: 10px;
+      background-color: $gris;
+      height: 650px;
+    }
+  }
+
+  .section_form_sender {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .section_form_inputs_box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    .section_form_inputs_box_input {
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+      align-items: end;
+      flex-direction: column;
+
+      label {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+
+        input {
+          width: 50px;
+          border: 1px solid $gris;
+        }
+      }
+    }
+
+    .section_form_inputs_box_image {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  label {
+    display: grid;
+    grid-auto-flow: row;
+    padding: 1px 0;
+  }
+  .other_inputs_information {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+
+    .other_inputs_information_flex {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      @media screen and (min-width: 800px) {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+      }
+    }
+  }
 }
 
-.section_from_uno {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
+.other_inputs,
+.other_inputs_information_check {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
 
-    @media screen and (max-width: 450px) {
-        grid-template-columns: 1fr;
-    }
+  @media screen and (min-width: 800px) {
+    flex-direction: initial;
+    justify-content: space-between;
+  }
+}
+// @media screen and (min-width: 800px) {
+//   .other_inputs_information_check {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     justify-content: space-between;
+//   }
+// }
+
+@media screen and (min-width: 800px) {
+  .other_inputs {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+}
+
+.required {
+  display: grid;
+  grid-template-columns: 1fr 20px;
+  align-items: center;
 }
 
 .section_form_boton {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    
-    button {
-        padding: 15px;
-        color: white;
-        background: $principal;
-        border: none;
-        border-radius: 10px;
-        font-size: 17px;
-        cursor: pointer;
-        // transition: .5s ease;
-        width: 200px;
-        
-        &:hover {
-            background: $secundario;
-            color: white;
-        }
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+
+  button {
+    padding: 15px;
+    color: white;
+    background: $principal;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    // transition: .5s ease;
+    width: 200px;
+
+    &:hover {
+      background: $secundario;
+      color: white;
     }
+  }
 }
 
-.show_contacto{
-    color: $gris_oscuro;
-    font-size: 22px;
+.show_contacto {
+  color: $gris_oscuro;
+  font-size: 22px;
 }
 
 .section_form_image {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 
-    img {
-        width: 100%;
-        height: 100%;
-        max-width: 500px;
-        max-height: 500px;
-        transition: all 300ms;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    transition: all 300ms;
+  }
 
-    img:hover {
-        transform: scale(1.05);
-    }
+  img:hover {
+    transform: scale(1.05);
+  }
 }
 
 .form_contact {
-    display: grid;
-    grid-auto-flow: row;
-    justify-content: center;
-    // gap: 19px;
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+  // gap: 19px;
 
-    @media screen and (max-width: 1359px) {
-        text-align: center;
-    }
+  @media screen and (max-width: 1359px) {
+    text-align: center;
+  }
 }
 
 .form_contact_content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .form_contact_phone {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 15px;
+  align-items: center;
+  justify-content: start;
+  color: #fff;
+
+  @media screen and (max-width: 1359px) {
     display: grid;
-    grid-auto-flow: column;
-    grid-gap: 15px;
+    justify-content: end;
+  }
+
+  @media screen and (max-width: 650px) {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
     align-items: center;
-    justify-content: start;
+  }
+
+  svg {
+    width: 25px;
+    margin: auto;
+    fill: #fff;
+    align-items: center;
+  }
+
+  a {
     color: #fff;
+    text-decoration: none;
+    transition: 0.5s ease;
+    font-size: 17px;
+  }
 
-    @media screen and (max-width: 1359px) {
-        display: grid;
-        justify-content: end;
+  a:hover {
+    color: $principal;
+  }
+
+  span {
+    @media screen and (max-width: 1000px) {
+      display: none;
     }
 
-    @media screen and (max-width: 650px) {
-        display: grid;
-        grid-auto-flow: row;
-        justify-content: center;
-        align-items: center;
+    @media screen and (max-width: 900px) {
+      display: grid;
+      grid-auto-flow: column;
+      text-align: center;
+      gap: 10px;
     }
 
-    svg {
-        width: 25px;
-        margin: auto;
-        fill: #fff;
-        align-items: center;
+    @media screen and (max-width: 814px) {
+      display: none;
     }
 
-    a {
-        color: #fff;
-        text-decoration: none;
-        transition: .5s ease;
-        font-size: 17px;
+    @media screen and (max-width: 500px) {
+      display: none;
     }
+  }
+}
 
-    a:hover {
-        color: $principal;
-    }
-
-    span {
-        @media screen and (max-width: 1000px) {
-            display: none;
-        }
-
-        @media screen and (max-width: 900px) {
-            display: grid;
-            grid-auto-flow: column;
-            text-align: center;
-            gap: 10px;
-        }
-
-        @media screen and (max-width: 814px) {
-            display: none;
-        }
-
-        @media screen and (max-width: 500px) {
-            display: none;
-        }
-    }
+form {
+  input,
+  textarea {
+    border: none;
+    border-bottom: 1px solid $gris;
+    height: 40px;
+    outline: none;
+    padding-left: 5px;
+  }
 }
 
 .section_form_inputs_encabezado {
-    color: white;
-    font-size: 18px;
-    margin-bottom: 10px;
+  text-align: start;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 
-    input {
-        border: none;
-        height: 40px;
-        outline: none;
-        padding-left: 12px;
-    }
+  textarea {
+    padding: 10px;
+    border: none;
+    padding-left: 5px;
+    resize: none;
+    outline: none;
+  }
 
-    textarea{
-        padding: 10px;
-        border: none;
-        padding-left: 12px;
-        resize: none;
-        outline: none;
-    }
-
-    #color {
-        color: gray;
-    }
+  #color {
+    color: gray;
+  }
 }
