@@ -48,11 +48,10 @@ require_once "./comons/version_css_js.php";
 
 <body>
 		<main>
-				<?php
-				require_once "./comons/bar_top.php";
-				require_once "./comons/nav.php";
-				require_once "./comons/button_ws.php";
-				?>
+
+			<?php
+					require_once "./comons/button_ws.php";
+			?>
 
 				<!-- Section Contacto -->
 				<div class="banner1">
@@ -315,7 +314,6 @@ require_once "./comons/version_css_js.php";
 																								<input type="text" name="addresseeCompany" placeholder="Extensión" />
 																						</label>
 
-																						
 																				</div>
 																				<div class="section_form_inputs_botones">
 																						<div class="section_form_boton">
@@ -335,9 +333,7 @@ require_once "./comons/version_css_js.php";
 				</div>
 
 
-				<?php
-				require_once "./comons/footer.php";
-				?>
+			
 		</main>
 
 		<script>
