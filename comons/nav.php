@@ -18,12 +18,19 @@
 
                 <nav class="nav_enlaces" id="menuMobile">
                     <p class="closeMenu" id="closeMenu">X</p>
-                    <a href="/">Inicio</a>
-                    <a href="/nosotros/">Nosotros</a>
-                    <a href="/contacto/">Contacto</a>
+                    <a href="#">Inicio</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Contacto</a>
+
+                    <!--
+                        /
+                        /nosotros/
+                        /contacto/
+                        /documento/documentos/catalogo.pdf
+                    -->
 
                     <div class="nav_btn">
-                        <a href="/documento/documentos/catalogo.pdf" download="catalogo.pdf">Descargar <br> Catalogo</a>
+                        <a href="#" download="catalogo.pdf">Descargar <br> Catalogo</a>
                     </div>
                 </nav>
             </div>
