@@ -84,7 +84,7 @@ require_once "../comons/version_css_js.php";
 																						<div class="required">
 																								<label class="section_form_inputs_encabezado" for="senderCountry">
 																										País/Territorio
-																										<input type="text" name="senderCountry" required placeholder="País/Territorio" />
+																										<input type="text" name="senderCountry" required placeholder="México" />
 																								</label>
 																								<span>*</span>
 																						</div>

@@ -1,84 +1,83 @@
-@import "./vars";
+@import './vars';
 
-
-.bg_bar_top{
-    background:  $principal;
+.bg_bar_top {
+  background: $principal;
 }
 
-.bar_top{
-    display: flex;
-    justify-content: space-between;
-    // justify-content: center;
+.bar_top {
+  display: flex;
+  justify-content: space-between;
+  // justify-content: center
+  padding: 20px 0;
+  align-items: center;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+  }
 
-    @media screen and (max-width: 900px) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  h2 {
+    color: $color_white;
+  }
 }
 
-.bar_top_social{
-    display: flex;
-    gap: 20px;
-    padding: 10px 0;
-    color: white;
-    
-    svg{
-        fill: white;
-        width: 20px;
-    }
+.bar_top_social {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  color: white;
+
+  svg {
+    fill: white;
+    width: 20px;
+  }
 }
 
-.bar_top_social:hover{
-    
-    a{
-
-        color: $principal;
-    }
+.bar_top_social:hover {
+  a {
+    color: $principal;
+  }
 }
 
-.hover:hover{
-    cursor: pointer;
-    svg{
-        fill: $secundario;
-    }
-    a{
-        color: $secundario;
-    }
+.hover:hover {
+  cursor: pointer;
+  svg {
+    fill: $secundario;
+  }
+  a {
+    color: $secundario;
+  }
 }
 
-.bar_top_social_icon{
-    display: flex;
-    gap: 5px;
+.bar_top_social_icon {
+  display: flex;
+  gap: 5px;
 }
 
+.bar_top_contact {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px 0;
+  color: white;
 
-.bar_top_contact{
+  svg {
+    fill: white;
+    width: 20px;
+  }
+
+  @media screen and (max-width: $mobile_460) {
+    display: none;
+  }
+}
+
+.bar_top_contact_icon {
+  a {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    padding: 10px 0;
-    color:  white ;
-
-    svg{
-        fill:  white ;
-        width: 20px;
-    }
-
-    @media screen and (max-width: $mobile_460) {
-        display: none;
-    }
-}
-
-
-.bar_top_contact_icon{
-
-    a{
-        display: flex;
-        flex-direction: row;
-        gap: 5px;
-        color: white;
-        text-decoration: none;
-    }
+    gap: 5px;
+    color: white;
+    text-decoration: none;
+  }
 }

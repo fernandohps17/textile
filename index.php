@@ -50,6 +50,7 @@ require_once "./comons/version_css_js.php";
 		<main>
 
 			<?php
+					require_once "./comons/bar_top.php";
 					require_once "./comons/button_ws.php";
 			?>
 
@@ -83,7 +84,7 @@ require_once "./comons/version_css_js.php";
 																						<div class="required">
 																								<label class="section_form_inputs_encabezado" for="senderCountry">
 																										País/Territorio
-																										<input type="text" name="senderCountry" required placeholder="País/Territorio" />
+																										<input type="text" name="senderCountry" required placeholder="México" />
 																								</label>
 																								<span>*</span>
 																						</div>
@@ -138,7 +139,39 @@ require_once "./comons/version_css_js.php";
 
 																								<label class="section_form_inputs_encabezado" for="senderState">
 																										Estado
-																										<input type="text" name="senderState" placeholder="Estado" />
+																										<select name="senderState">
+																											<option value="Baja California">Baja California</option>
+																											<option value="Aguascalientes">Aguascalientes</option>
+																											<option value="Baja California Sur">Baja California Sur</option>
+																											<option value="Campeche">Campeche</option>
+																											<option value="CDMX" selected>CDMX</option>
+																											<option value="Chiapas">Chiapas</option>
+																											<option value="Chihuahua">Chihuahua</option>
+																											<option value="Coahuila">Coahuila</option>
+																											<option value="Colima">Colima</option>
+																											<option value="Durango">Durango</option>
+																											<option value="Estado De México">Estado De México</option>
+																											<option value="Guanajuato">Guanajuato</option>
+																											<option value="Guerrero">Guerrero</option>
+																											<option value="Hidalgo">Hidalgo</option>
+																											<option value="Jalisco">Jalisco</option>
+																											<option value="Michoacán">Michoacán</option>
+																											<option value="Nayarit">Nayarit</option>
+																											<option value="Nuevo León">Nuevo León</option>
+																											<option value="Oaxaca">Oaxaca</option>
+																											<option value="Puebla">Puebla</option>
+																											<option value="Morelos">Morelos</option>
+																											<option value="Querétaro">Querétaro</option>
+																											<option value="Quintana Roo">Quintana Roo</option>
+																											<option value="San Luis Potosí">San Luis Potosí</option>
+																											<option value="Sinaloa">Sinaloa</option>
+																											<option value="Tamaulipas">Tamaulipas</option>
+																											<option value="Veracruz">Veracruz</option>
+																											<option value="Tabasco">Tabasco</option>
+																											<option value="Tlaxcala">Tlaxcala</option>
+																											<option value="Yucatán">Yucatán</option>
+																											<option value="Zacatecas">Zacatecas</option>
+																										</select>
 																								</label>
 																						</div>
 																				</div>
@@ -154,8 +187,8 @@ require_once "./comons/version_css_js.php";
 
 																						<div class="required">
 																								 <label class="section_form_inputs_encabezado" for="senderEmail">
-																										Correo Electronica
-																										<input type="email" require name="senderEmail" placeholder="Correo Electronica" />
+																										Correo Electrónico
+																										<input type="email" require name="senderEmail" placeholder="Correo Electrónico" />
 																								 </label>
 																								<span>*</span>
 																						</div>
@@ -200,6 +233,12 @@ require_once "./comons/version_css_js.php";
 																						<div class="section_form_inputs_box_image">
 																							<img src="../public/img/box.png" alt="caja">
 																						</div>
+																						<div class="section_form_inputs_box_input_kg">
+																							<label for="kgLong">
+																								Peso:
+																								<input type="number" for="kgLong" require placeholder="Kg" />
+																							</label>
+																						</div>
 																					</div>
 																				</div>
 																				<span class="section_form_line"></span>
@@ -214,7 +253,7 @@ require_once "./comons/version_css_js.php";
 																				 <div class="required">
 																										<label class="section_form_inputs_encabezado" for="addresseeCountry">
 																												País/Territorio
-																												<input type="text" name="addresseeCountry" required placeholder="País/Territorio" />
+																												<input type="text" name="addresseeCountry" required placeholder="México" />
 																										</label>
 																										<span>*</span>
 																								</div>
@@ -270,7 +309,39 @@ require_once "./comons/version_css_js.php";
 
 																								<label class="section_form_inputs_encabezado" for="addresseeState">
 																										Estado
-																										<input type="text" name="addresseeState" placeholder="Empresa" />
+																										<select name="addresseeState">
+																											<option value="Baja California">Baja California</option>
+																											<option value="Aguascalientes">Aguascalientes</option>
+																											<option value="Baja California Sur">Baja California Sur</option>
+																											<option value="Campeche">Campeche</option>
+																											<option value="CDMX" selected>CDMX</option>
+																											<option value="Chiapas">Chiapas</option>
+																											<option value="Chihuahua">Chihuahua</option>
+																											<option value="Coahuila">Coahuila</option>
+																											<option value="Colima">Colima</option>
+																											<option value="Durango">Durango</option>
+																											<option value="Estado De México">Estado De México</option>
+																											<option value="Guanajuato">Guanajuato</option>
+																											<option value="Guerrero">Guerrero</option>
+																											<option value="Hidalgo">Hidalgo</option>
+																											<option value="Jalisco">Jalisco</option>
+																											<option value="Michoacán">Michoacán</option>
+																											<option value="Nayarit">Nayarit</option>
+																											<option value="Nuevo León">Nuevo León</option>
+																											<option value="Oaxaca">Oaxaca</option>
+																											<option value="Puebla">Puebla</option>
+																											<option value="Morelos">Morelos</option>
+																											<option value="Querétaro">Querétaro</option>
+																											<option value="Quintana Roo">Quintana Roo</option>
+																											<option value="San Luis Potosí">San Luis Potosí</option>
+																											<option value="Sinaloa">Sinaloa</option>
+																											<option value="Tamaulipas">Tamaulipas</option>
+																											<option value="Veracruz">Veracruz</option>
+																											<option value="Tabasco">Tabasco</option>
+																											<option value="Tlaxcala">Tlaxcala</option>
+																											<option value="Yucatán">Yucatán</option>
+																											<option value="Zacatecas">Zacatecas</option>
+																										</select>
 																								</label>
 																						</div>
 																				</div>
@@ -294,8 +365,8 @@ require_once "./comons/version_css_js.php";
 
 																							 <div class="required">
 																								 <label class="section_form_inputs_encabezado" for="addresseeEmail">
-																										Correo Electronica
-																										<input type="email" require name="addresseeEmail" placeholder="Correo Electronica" />
+																										Correo Electrónico
+																										<input type="email" require name="addresseeEmail" placeholder="Correo Electrónico" />
 																								 </label>
 																								<span>*</span>
 																						</div>

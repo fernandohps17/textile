@@ -57,17 +57,20 @@ html {
       right: 60px; } }
 
 .bg_bar_top {
-  background: #9c1323; }
+  background: #d2002e; }
 
 .bar_top {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
   align-items: center; }
   @media screen and (max-width: 900px) {
     .bar_top {
       flex-direction: column;
       justify-content: center;
       align-items: center; } }
+  .bar_top h2 {
+    color: #fff; }
 
 .bar_top_social {
   display: flex;
@@ -79,7 +82,7 @@ html {
     width: 20px; }
 
 .bar_top_social:hover a {
-  color: #9c1323; }
+  color: #d2002e; }
 
 .hover:hover {
   cursor: pointer; }
@@ -113,7 +116,7 @@ html {
   text-decoration: none; }
 
 .bg_nav {
-  background: #9c1323; }
+  background: #d2002e; }
 
 .nav {
   display: flex;
@@ -168,7 +171,7 @@ html {
       position: absolute;
       top: 0;
       right: 0;
-      color: #9c1323;
+      color: #d2002e;
       font-weight: bold;
       font-size: 21px;
       background: white;
@@ -179,7 +182,7 @@ html {
       align-items: center;
       cursor: pointer; }
       .closeMenu:hover {
-        background: #9c1323;
+        background: #d2002e;
         color: white; } }
 
 .toggle {
@@ -317,7 +320,7 @@ html {
 .section_form_form_text_title {
   text-align: center;
   font-size: 27px;
-  color: #9c1323; }
+  color: #d2002e; }
   @media screen and (max-width: 600px) {
     .section_form_form_text_title {
       font-size: 19px; } }
@@ -329,7 +332,7 @@ html {
   text-align: center;
   line-height: 25px;
   letter-spacing: 1px;
-  color: #9c1323; }
+  color: #d2002e; }
 
 .section_form_inputs {
   display: flex;
@@ -358,7 +361,9 @@ html {
     gap: 30px; }
   .section_form_inputs .section_form_inputs_box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 30px; }
     .section_form_inputs .section_form_inputs_box .section_form_inputs_box_input {
       padding: 10px;
@@ -376,6 +381,16 @@ html {
           border: 1px solid #918f92; }
     .section_form_inputs .section_form_inputs_box .section_form_inputs_box_image img {
       max-width: 100%; }
+    .section_form_inputs .section_form_inputs_box .section_form_inputs_box_input_kg label {
+      display: flex;
+      gap: 5px;
+      align-items: center; }
+    .section_form_inputs .section_form_inputs_box .section_form_inputs_box_input_kg input {
+      border: 1px solid #918f92;
+      width: 50px; }
+    @media screen and (min-width: 1400px) {
+      .section_form_inputs .section_form_inputs_box {
+        flex-wrap: nowrap; } }
   .section_form_inputs label {
     display: grid;
     grid-auto-flow: row;
@@ -424,7 +439,7 @@ html {
   .section_form_boton button {
     padding: 15px;
     color: white;
-    background: #9c1323;
+    background: #d2002e;
     border: none;
     border-radius: 10px;
     font-size: 17px;
@@ -494,7 +509,7 @@ html {
     transition: 0.5s ease;
     font-size: 17px; }
   .form_contact_phone a:hover {
-    color: #9c1323; }
+    color: #d2002e; }
   @media screen and (max-width: 1000px) {
     .form_contact_phone span {
       display: none; } }
@@ -535,7 +550,7 @@ form textarea {
     color: gray; }
 
 .bg_footer {
-  background: #9c1323; }
+  background: #d2002e; }
 
 .footer_bottom {
   margin: 20px 0;
@@ -565,7 +580,7 @@ form textarea {
   margin: 70px 0; }
 
 .login_title {
-  color: #9c1323;
+  color: #d2002e;
   font-size: 25px; }
 
 .login_form,
@@ -581,36 +596,36 @@ form textarea {
     flex-direction: column;
     text-align: center;
     font-size: 20px;
-    color: #9c1323;
+    color: #d2002e;
     gap: 10px; }
   .login_form input[type='text'],
   .pdf input[type='text'] {
     padding: 5px;
     border-radius: 10px;
     outline: none;
-    border: 1px solid #9c1323;
+    border: 1px solid #d2002e;
     padding-left: 5px; }
   .login_form input[type='password'],
   .pdf input[type='password'] {
     padding: 5px;
     border-radius: 10px;
     outline: none;
-    border: 1px solid #9c1323;
+    border: 1px solid #d2002e;
     padding-left: 5px; }
   .login_form input[type='submit'],
   .pdf input[type='submit'] {
     padding: 10px;
     border-radius: 10px;
     outline: none;
-    border: 1px solid #9c1323;
-    background: #9c1323;
+    border: 1px solid #d2002e;
+    background: #d2002e;
     color: white;
     font-size: 18px;
     padding: 10px 20px; }
   .login_form input[type='submit']:hover,
   .pdf input[type='submit']:hover {
     background: #d36b5c;
-    color: #9c1323;
+    color: #d2002e;
     border: 1px solid #d36b5c;
     cursor: pointer; }
   .login_form input[type='file'],
@@ -634,7 +649,7 @@ form textarea {
   gap: 20px;
   font-size: 30px;
   letter-spacing: 1px;
-  color: #9c1323; }
+  color: #d2002e; }
 
 .exito {
   padding: 10px;
