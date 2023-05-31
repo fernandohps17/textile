@@ -45,6 +45,7 @@ require_once "../comons/version_css_js.php";
         <?php
         require_once "../comons/bar_top.php";
         require_once "../comons/nav.php";
+        require_once "../comons/button_ws.php";
         ?>
 
         <!-- Section Contacto -->

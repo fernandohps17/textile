@@ -1,30 +1,69 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    font-display: swap;
-    src: url(../font/Montserrat-Regular.ttf);
+  font-family: 'Montserrat';
+  font-display: swap;
+  src: url(../font/Montserrat-Regular.ttf);
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
-    position: relative;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  position: relative;
 }
 
 .content {
-    display: grid;
-    grid-column: 2/3;
-    max-width: 1600px;
-    margin: 0 auto;
-    width: 100%;
+  display: grid;
+  grid-column: 2/3;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.icon_ws {
+  bottom: 100px;
+
+  .icon_ws_item {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.btn-wsp {
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  line-height: 55px;
+  background-color: $icon_ws;
+  border-radius: 50px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  text-decoration: none;
+
+  .btn-wsp-item {
+    width: 35px;
+    fill: $color_white;
+  }
+  &:hover {
+    background-color: $color_white;
+    .btn-wsp-item {
+      fill: $icon_ws;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    bottom: 90px;
+  }
 }
