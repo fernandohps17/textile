@@ -70,7 +70,7 @@ require_once "../comons/version_css_js.php";
 
                             <div class="section_formulario">
                                 <div class="form_form">
-                                    <form class="section_form_inputs" action="/contact/" method="POST">
+                                    <form class="section_form_inputs" action="/consulta/" method="POST">
                                         <div class="section_from_uno">
                                             <label class="section_form_inputs_encabezado">
                                                 <input type="text" name="name" required placeholder="Nombre">
