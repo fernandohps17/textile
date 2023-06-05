@@ -38,29 +38,37 @@ html {
   }
 }
 
-.btn-wsp {
-  position: fixed;
-  width: 64px;
-  height: 64px;
-  line-height: 55px;
+.wsp {
   background-color: $icon_ws;
   border-radius: 50px;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
   text-decoration: none;
 
   .btn-wsp-item {
-    width: 35px;
     fill: $color_white;
   }
+
   &:hover {
     background-color: $color_white;
     .btn-wsp-item {
       fill: $icon_ws;
     }
+  }
+}
+
+.btn-wsp {
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  line-height: 55px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+
+  .btn-wsp-item {
+    width: 35px;
+    fill: $color_white;
   }
 
   @media screen and (min-width: 1024px) {

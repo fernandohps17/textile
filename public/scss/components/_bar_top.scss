@@ -1,84 +1,92 @@
-@import "./vars";
+@import './vars';
 
-
-.bg_bar_top{
-    background:  $principal;
+.bg_bar_top {
+  background: $principal;
 }
 
-.bar_top{
-    display: flex;
-    justify-content: space-between;
-    // justify-content: center;
+.bar_top {
+  display: flex;
+  justify-content: space-between;
+  // justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-
-    @media screen and (max-width: 900px) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  }
 }
 
-.bar_top_social{
+.bar_top_icon_ws_item {
+  .bar_top_btn-wsp {
+    height: 45px;
+    width: 45px;
+    .btn-wsp-item {
+      width: 20px;
+    }
+  }
+}
+
+.bar_top_social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+
+  svg {
+    fill: white;
+    width: 20px;
+  }
+}
+
+.bar_top_social:hover {
+  a {
+    color: $principal;
+  }
+}
+
+.hover:hover {
+  cursor: pointer;
+  svg {
+    fill: $secundario;
+  }
+  a {
+    color: $secundario;
+  }
+}
+
+.bar_top_social_icon {
+  display: flex;
+  gap: 5px;
+}
+
+.bar_top_contact {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px 0;
+  color: white;
+
+  svg {
+    fill: white;
+    width: 30px;
+  }
+
+  @media screen and (max-width: $mobile_460) {
+    display: none;
+  }
+}
+
+.bar_top_contact_icon {
+  display: flex;
+  align-items: center;
+  a {
+    width: 160px;
     display: flex;
-    gap: 20px;
-    padding: 10px 0;
-    color: white;
-    
-    svg{
-        fill: white;
-        width: 20px;
-    }
-}
-
-.bar_top_social:hover{
-    
-    a{
-
-        color: $principal;
-    }
-}
-
-.hover:hover{
-    cursor: pointer;
-    svg{
-        fill: $secundario;
-    }
-    a{
-        color: $secundario;
-    }
-}
-
-.bar_top_social_icon{
-    display: flex;
-    gap: 5px;
-}
-
-
-.bar_top_contact{
-    display: flex;
+    align-items: center;
     flex-direction: row;
-    gap: 20px;
-    padding: 10px 0;
-    color:  white ;
-
-    svg{
-        fill:  white ;
-        width: 20px;
-    }
-
-    @media screen and (max-width: $mobile_460) {
-        display: none;
-    }
-}
-
-
-.bar_top_contact_icon{
-
-    a{
-        display: flex;
-        flex-direction: row;
-        gap: 5px;
-        color: white;
-        text-decoration: none;
-    }
+    gap: 5px;
+    color: white;
+    text-decoration: none;
+  }
 }
