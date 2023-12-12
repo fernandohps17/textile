@@ -1,0 +1,67 @@
+.icon_principal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0;
+}
+
+.icon_principal_container {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid $color_border;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: $box_shadow;
+    transition: 1s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.icon_principal_container_icon {
+    svg {
+        width: 80px;
+        background-color: $color_principal;
+        fill: $color_white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+
+.icon_principal_container_title {
+    color: $color_principal;
+}
+
+.icon_principal_container_subtitle {
+    color: $color_subtitle;
+}
+
+.icon_principal_container_btn {
+
+    a {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-decoration: none;
+        color: $color_principal;
+        font-weight: 600;
+        transition: 1s ease;
+
+        &:hover {
+            transform: scale(1.09);
+        }
+
+        svg {
+            width: 25px;
+        }
+    }
+
+}
