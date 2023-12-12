@@ -9,7 +9,7 @@
 
 .icon_principal_container {
     display: grid;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -64,4 +64,8 @@
         }
     }
 
+}
+
+.scale {
+    transform: scale(1.1);
 }

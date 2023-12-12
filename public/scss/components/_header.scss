@@ -38,14 +38,16 @@
 
 .header_img_icon {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 10%;
+    display: grid;
+    gap: 15px;
     
     a{
         display: grid;
         
         svg {
-            width: 30px;
+            width: 25px;
             fill: $color_principal;
 
             &:hover {
