@@ -1,6 +1,7 @@
 // Menu de navegacion
 .bg_nav {
     background: $fondo_nav;
+    clip-path: polygon(100% 0, 100% 100%, 0 77%, 0 0);
 }
 
 .bar_top {
@@ -28,7 +29,7 @@
     gap: 20px;
     padding: 15px 0px;
 
-    @media screen and (max-width: $desktop_1185) {
+    @media screen and (max-width: $desktop_1360) {
         justify-content: end;
     }
 }
@@ -67,7 +68,7 @@
         text-shadow: none;
     }
 
-    @media screen and (max-width: $desktop_1185) {
+    @media screen and (max-width: $desktop_1360) {
         display: none;
         position: fixed;
         width: 100%;
@@ -93,7 +94,7 @@
     display: flex;
     gap: 40px;
 
-    @media screen and (max-width: $desktop_1185) {
+    @media screen and (max-width: $desktop_1360) {
         display: grid;
     }
 
@@ -105,7 +106,7 @@
 .closeMenu {
     display: none;
 
-    @media screen and (max-width: $desktop_1185) {
+    @media screen and (max-width: $desktop_1360) {
         position: absolute;
         top: 2em;
         right: 2em;
@@ -139,7 +140,7 @@
         }
     }
 
-    @media screen and (max-width: $desktop_1185) {
+    @media screen and (max-width: $desktop_1360) {
         display: flex;
     }
 }
@@ -218,7 +219,7 @@
         }
     }
 
-    @media screen and (max-width: $desktop_1185) {
+    @media screen and (max-width: $desktop_1360) {
         display: none;
     }
 }
@@ -227,7 +228,7 @@
 .menu_idioma2 {
     display: none;
 
-    @media screen and (max-width: $desktop_1185) {
+    @media screen and (max-width: $desktop_1360) {
         display: flex;
         justify-content: center;
         align-items: center;

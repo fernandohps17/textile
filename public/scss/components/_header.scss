@@ -1,0 +1,108 @@
+.bg_header {
+    background: linear-gradient(to bottom, #ccc4d4f4, #4d4555e3), url('/public/img/textile-header-fondo.webp');
+    clip-path: polygon(100% 0, 100% 100%, 0 93%, 0 0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: calc(100vh - 106px);
+
+    @media screen and (max-height: 800px) {
+        height: 600px;
+    }
+} 
+
+.header {
+    display: flex;
+    // gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.header_img {
+    position: relative;
+    
+    img {
+        width: 700px;
+        height: 600px;
+        // max-width: 500px;
+        // max-height: 600px;
+        object-fit: contain;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+
+    @media screen and (max-width: $desktop_1525) {
+        display: none;
+    }
+}
+
+.header_img_icon {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    
+    a{
+        display: grid;
+        
+        svg {
+            width: 30px;
+            fill: $color_principal;
+
+            &:hover {
+                fill: $color_secundario;
+            }
+        }
+    }
+}
+
+.header_content {
+    display: grid;
+    gap: 15px;
+}
+
+.encabezado {
+    font-size: 22px;
+
+    b {
+        color: $color_principal;
+    }
+}
+
+.title {
+    color: $color_white;
+    font-size: 50px;
+
+    @media screen and (max-width: $mobile_600) {
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: $mobile_600) {
+        font-size: 30px;
+    }
+}
+
+.subtitle {
+    color: $color_white;
+    line-height: 23px;
+}
+
+.btn {
+    transition: 0.5s ease;
+
+    a {
+        background: $color_principal;
+        text-decoration: none;
+        color: $color_white;
+        border-radius: 10px;
+        padding: 15px 25px;
+
+        &:hover {
+            background-color: $color_secundario;
+            color: $color_principal;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
