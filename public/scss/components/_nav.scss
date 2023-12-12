@@ -1,0 +1,235 @@
+// Menu de navegacion
+.bg_nav {
+    background: $fondo_nav;
+}
+
+.bar_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.bar_top_logo {
+
+    img {
+        width: 100%;
+        height: 100%;
+        max-width: 180px;
+        max-height: 80px;
+    }
+}
+
+.menu {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 0px;
+
+    @media screen and (max-width: $desktop_1185) {
+        justify-content: end;
+    }
+}
+
+.menu_enlaces {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    font-weight: 300;
+
+    p {
+        transition: all 300ms;
+    }
+
+    p:hover {
+        transform: scale(1.1);
+        fill: $color_secundario;
+    }
+
+    a {
+        color: $color_white;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        transition: .5s ease;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    a:hover {
+        color: $color_principal;
+        text-shadow: none;
+    }
+
+    @media screen and (max-width: $desktop_1185) {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $fondo_nav;
+
+        a::after {
+            content: none;
+        }
+    }
+
+    &.activeMenu {
+        display: flex;
+    }
+}
+
+.menu_enlaces_a {
+    display: flex;
+    gap: 40px;
+
+    @media screen and (max-width: $desktop_1185) {
+        display: grid;
+    }
+
+    .activeNav2 {
+        color: $color_principal;
+    }
+}
+
+.closeMenu {
+    display: none;
+
+    @media screen and (max-width: $desktop_1185) {
+        position: absolute;
+        top: 2em;
+        right: 2em;
+        color: $fondo_nav;
+        font-weight: bold;
+        font-size: 21px;
+        background: $color_principal;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+// Menu de hamburguesa
+.toggle {
+    display: none;
+
+    svg {
+        fill: $color_principal;
+        border: none;
+        line-height: 30px;
+        cursor: pointer;
+        transition: .3s ease;
+
+        &:hover {
+            fill: $color_secundario;
+        }
+    }
+
+    @media screen and (max-width: $desktop_1185) {
+        display: flex;
+    }
+}
+
+.menu_social {
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    gap: 25px;
+}
+
+.menu_social_idioma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    a {
+        cursor: pointer;
+        color: $color_principal;
+        font-size: 23px;
+        transition: 1s ease;
+        font-weight: 600;
+        display: flex;
+        gap: 10px;
+        text-decoration: none;
+
+        &:hover {
+            color: $color_secundario;
+        }
+
+    }
+
+    span {
+        color: $color_principal;
+
+        &:hover {
+            color: $color_principal;
+        }
+    }
+}
+
+.menu_social_icon {
+    display: flex;
+    gap: 10px;
+
+}
+
+.menu_social_icon_svg {
+
+    svg {
+        width: 30px;
+        fill: $color_principal;
+        transition: 1s ease;
+
+        &:hover {
+            fill: $color_secundario;
+        }
+    }
+}
+
+.menu_idioma {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: $color_principal;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+
+        &:hover {
+            color: $color_white;
+        }
+    }
+
+    @media screen and (max-width: $desktop_1185) {
+        display: none;
+    }
+}
+
+
+.menu_idioma2 {
+    display: none;
+
+    @media screen and (max-width: $desktop_1185) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
