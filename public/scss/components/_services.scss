@@ -1,0 +1,127 @@
+.bg_services {
+    background: linear-gradient(to bottom, #ccc4d4f4, #4d4555e3), url('/public/img/textile-section-services-fondo.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 89%);
+
+    @media screen and (max-width: $desktop_1580) {
+        clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 94%);
+    }
+}
+
+.services {
+    margin: 100px 0 150px 0; 
+    display: grid;
+    gap: 50px;
+
+    @media screen and (max-width: $mobile_500) {
+        margin: 200px 0;
+    }
+}
+
+.services_content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    @media screen and (max-width: $desktop_1185) {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.services_content_btn {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    a {
+        background: $color_principal;
+        text-decoration: none;
+        color: $color_white;
+        border-radius: 10px;
+        padding: 20px 30px;
+        transition: 1s ease;
+
+        &:hover {
+            background-color: $color_secundario;
+            color: $color_principal;
+            transform: scale(1.05);
+        }
+    }
+}
+
+.services_content_text {
+    display: grid;
+    gap: 10px;
+}
+
+.bg_cart_one {
+    background: $color_principal;
+    border: 1px solid $color_principal !important;
+}
+
+.services_cart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    // @media screen and (max-width: $desktop_1580) {
+        
+    // }
+}
+
+.services_cart_content {
+    padding: 60px 40px;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    display: grid;
+    gap: 15px;
+    transition: 1s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.services_cart_content_img {
+
+    img {
+        border-radius: 10px;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.services_cart_content_title {
+    color: $color_white;
+}
+
+.services_cart_content_subtitle {
+    color: $color_white;
+    line-height: 24px;
+}
+
+.services_cart_content_btn {
+    transition: 1s ease;
+    
+    a {
+        display: flex;
+        gap: 10px;
+        // justify-content: center;
+        align-items: center;
+        color: $color_white;
+        text-decoration: none;
+
+        svg {
+            fill: $color_white;
+            width: 30px;
+        }
+    }
+    
+    &:hover {
+        transform: scale(1.1);
+    }
+}

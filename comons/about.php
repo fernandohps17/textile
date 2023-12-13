@@ -1,7 +1,6 @@
 <div class="container">
     <div class="content">
         <div class="about">
-
             <section class="about_content">
                 <p class="encabezado"><b>Sobre nosotros</b></p>
                 <header>
@@ -37,7 +36,6 @@
                 </div>
             </section>
 
-
             <div class="about_image">
                 <picture class="picture-defer">
                     <source class="image source" type='image/webp' data-img="/public/img/textile-header-imagen-about-us.webp">
@@ -56,9 +54,6 @@
             </div>
         </div><br><br><br>
 
-
-
-
         <div class="about_bottom bg_about">
             <div class="about_bottom_box">
                 <div class="about_bottom_box_icon">
@@ -70,7 +65,6 @@
                 <div class="about_bottom_box_text">Clientes</div>
             </div>
 
-
             <div class="about_bottom_box">
                 <div class="about_bottom_box_icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
@@ -80,7 +74,6 @@
                 <div class="about_bottom_box_number"><strong>11+</strong></div>
                 <div class="about_bottom_box_text">Productos</div>
             </div>
-
 
             <div class="about_bottom_box bg_box">
                 <div class="about_bottom_box_icon">
@@ -92,7 +85,6 @@
                 <div class="about_bottom_box_text">Mejor marca</div>
             </div>
 
-
             <div class="about_bottom_box">
                 <div class="about_bottom_box_icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
@@ -103,8 +95,5 @@
                 <div class="about_bottom_box_text">Trabajadores</div>
             </div>
         </div>
-
-
-
     </div>
 </div>
