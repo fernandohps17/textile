@@ -1,0 +1,19 @@
+.projects {
+    margin: 70px 0;
+}
+
+.projects_title {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    color: $color_principal;
+
+    p {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+}

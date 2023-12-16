@@ -45,6 +45,7 @@ require_once "./comons/version_css_js.php";
         require_once './comons/icon_principal.php';
         require_once './comons/about.php';
         require_once './comons/services.php';
+        require_once './comons/projects.php';
     ?>
 
     <script src="/public/js/carga_diferida.js"></script>
