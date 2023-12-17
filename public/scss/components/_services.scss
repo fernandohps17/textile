@@ -68,9 +68,9 @@
     flex-wrap: wrap;
     gap: 25px;
 
-    // @media screen and (max-width: $desktop_1580) {
-        
-    // }
+    @media screen and (max-width: $desktop_1170) {
+        justify-content: center;
+    }
 }
 
 .services_cart_content {
