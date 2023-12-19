@@ -29,7 +29,7 @@ require_once "./comons/version_css_js.php";
             "@type": "LocalBusiness",
             "name": "Manisur",
             "image": "https://www.textile.com/public/img/textile-logo.webp",
-            "telephone": ["34 956 888 601"],
+            "telephone": ["00 000 00 00"],
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Direccion sin local"
@@ -40,6 +40,7 @@ require_once "./comons/version_css_js.php";
 </head>
 
 <body>
+    
     <?php
         require_once './comons/nav.php';
         require_once './comons/icon_principal.php';
@@ -48,6 +49,7 @@ require_once "./comons/version_css_js.php";
         require_once './comons/projects.php';
         require_once './comons/testimony.php';
         require_once './comons/team.php';
+        require_once './comons/footer.php';
     ?>
 
     <script src="/public/js/carga_diferida.js"></script>
