@@ -1,9 +1,26 @@
 <div class="container">
     <div class="content">
+        <div class="footer_top">
+            <section class="footer_top_text">
+                <header>
+                    <h2>Nuestros boletines</h2>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Ut elit tellus, luctus nec ullamcorper.</p>
+            </section>
+            <div class="footer_top_inputs">
+                <input type="email" required placeholder="Email">
+                <button>Enviar</button>
+            </div>
+        </div>
+    </div>
+</div><br><br>
+
+<div class="container bg_footer">
+    <div class="content">
 
         <div class="footer">
 
-            <div class="footer_top">
+            <!-- <div class="footer_top">
                 <section class="footer_top_text">
                     <header>
                         <h2>Nuestros boletines</h2>
@@ -14,7 +31,7 @@
                     <input type="email" required placeholder="Email">
                     <button>Enviar</button>
                 </div>
-            </div>
+            </div> -->
 
 
             <div class="footer_bottom">
@@ -25,8 +42,8 @@
                         <img class="image" data-img="/public/img/textile-logo-footer.png" alt="Textile logo footer" title="Textile logo footer" width="100" height="100">
                     </picture>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-
+                    <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Ut elit tellus, luctus nec <br> ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <br>
                     <div class="footer_bottom_icon">
                         <a href="www.facebook.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
@@ -53,30 +70,34 @@
                     <a href="#" class="<?php echo $contacto ?>">Contacto</a>
                 </div>
 
-
-
-
                 <div class="footer_bottom_work">
                     <h2>Horas laborales</h2>
-
                     <div class="footer_bottom_work_hours">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg>
-                        <p>7 AM - 5 PM, Mon - Sat</p>
-                        <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
+                        </svg>
+                        <div class="footer_bottom_work_hours_text">
+                            <p>7 AM - 5 PM, Mon - Sat</p>
+                        </div>
                     </div>
+                    <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
 
                     <div class="footer_bottom_work_btn">
                         <a href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
-                        <p>Llamanos</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+                            </svg>
+                            <p>Llamanos</p>
                         </a>
                     </div>
                 </div>
+                
+            </div> 
+        </div>
 
-
-
-
-            </div>
+        <div class="footer_end">
+            <hr><br>
+            <p>© 2022 Textiles Template • All Rights Reserved</p>
         </div>
     </div>
 </div>
