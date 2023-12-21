@@ -17,25 +17,8 @@
 
 <div class="container bg_footer">
     <div class="content">
-
         <div class="footer">
-
-            <!-- <div class="footer_top">
-                <section class="footer_top_text">
-                    <header>
-                        <h2>Nuestros boletines</h2>
-                    </header>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Ut elit tellus, luctus nec ullamcorper.</p>
-                </section>
-                <div class="footer_top_inputs">
-                    <input type="email" required placeholder="Email">
-                    <button>Enviar</button>
-                </div>
-            </div> -->
-
-
             <div class="footer_bottom">
-
                 <div class="footer_bottom_logo">
                     <picture class="picture-defer">
                         <source class="image source" type='image/webp' data-img="/public/img/textile-logo-footer.webp">
@@ -57,12 +40,8 @@
                     </div>
                 </div>
 
-
-
-
                 <div class="footer_bottom_nav">
                     <h2>Navegación</h2><br>
-
                     <a href="/" class="<?php echo $inicio ?>">Inicio</a>
                     <a href="#" class="<?php echo $nosotros ?>">Sobre Nosotros</a>
                     <a href="#" class="<?php echo $servicios ?>">Servicios</a>
@@ -71,7 +50,7 @@
                 </div>
 
                 <div class="footer_bottom_work">
-                    <h2>Horas laborales</h2>
+                    <h2>Horas laborales</h2><br>
                     <div class="footer_bottom_work_hours">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                             <path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z" />
@@ -81,7 +60,6 @@
                         </div>
                     </div>
                     <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
-
                     <div class="footer_bottom_work_btn">
                         <a href="">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
@@ -91,10 +69,8 @@
                         </a>
                     </div>
                 </div>
-                
             </div> 
         </div>
-
         <div class="footer_end">
             <hr><br>
             <p>© 2022 Textiles Template • All Rights Reserved</p>
