@@ -43,7 +43,7 @@
                 <div class="footer_bottom_nav">
                     <h2>Navegación</h2><br>
                     <a href="/" class="<?php echo $inicio ?>">Inicio</a>
-                    <a href="#" class="<?php echo $nosotros ?>">Sobre Nosotros</a>
+                    <a href="/nosotros/" class="<?php echo $nosotros ?>">Sobre Nosotros</a>
                     <a href="#" class="<?php echo $servicios ?>">Servicios</a>
                     <a href="#" class="<?php echo $proyecto ?>">Proyectos</a>
                     <a href="#" class="<?php echo $contacto ?>">Contacto</a>
