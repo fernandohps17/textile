@@ -20,7 +20,7 @@ if (strpos($_SERVER['REQUEST_URI'], 'servicios')) {
 }
 ?>
 
-<div class="container bg_header">
+<div class="container bg_header" id="inicio">
     <div class="content">
 
         <!-- Seccion  menu -->

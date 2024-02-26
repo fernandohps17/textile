@@ -42,6 +42,7 @@ require_once "./comons/version_css_js.php";
 <body>
     
     <?php
+        require_once './comons/btn_top.php';
         require_once './comons/nav.php';
         require_once './comons/icon_principal.php';
         require_once './comons/about.php';
